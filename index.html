@@ -17,21 +17,21 @@
   </head>
 
   <body
-    class="scroll-smooth flex flex-col gap-6 bg-[url('assets/img/background.png')] p-8 lg:p-52 lg:py-12 lg:gap-12 bg-fixed text-lg"
+    class="scroll-smooth flex flex-col gap-6 bg-[url('assets/img/background.png')] p-8 lg:p-52 lg:py-12 lg:gap-12 bg-fixed text-lg text-gray-700"
   >
     <div class="flex flex-col items-center gap-6">
       <img alt="Logo de OneShot" class="w-3/4 lg:w-2/5" src="assets/img/logo.png" />
 
-      <h1 class="text-2xl">
+      <h1 class="text-xl">
         Un tout nouveau jeu dans l'univers de OneShot, maintenant disponible en
         Français
       </h1>
 
       <div class="flex gap-6">
-        <a href="#instructions" class="text-xl bg-purple-500 w-fit rounded-md p-3">
+        <a href="#instructions" class="text-xl text-black bg-purple-500 w-fit rounded-md p-3">
           Installer
         </a>
-        
+
         <a href="https://github.com/lumap/oneshot-pancakes-fr-translation" target="_blank" class="text-xl text-white bg-gray-700 w-fit rounded-md p-3 ml-4">
           Voir sur GitHub
         </a>
@@ -40,21 +40,21 @@
 
     <hr class="border-t border-black" />
 
-    <h1 class="text-center text-xl">
-      Quelques images pour vous donner envie de l'essayer
+    <h1 class="text-center text-2xl">
+      Captures d'écran de la traduction
     </h1>
 
     <div class="relative">
       <div
         hidden
         id="arrow-left"
-        class="cursor-pointer absolute left-2 top-1/2 -translate-y-1/2 rounded-full text-white bg-black bg-opacity-50 px-4 text-4xl"
+        class="cursor-pointer absolute left-2 top-1/2 -translate-y-1/2 rounded-full text-white bg-black bg-opacity-50 px-4 text-6xl"
       >
         &larr;
       </div>
       <div
         id="arrow-right"
-        class="cursor-pointer absolute right-2 top-1/2 -translate-y-1/2 rounded-full text-white bg-black bg-opacity-50 px-4 text-4xl"
+        class="cursor-pointer absolute right-2 top-1/2 -translate-y-1/2 rounded-full text-white bg-black bg-opacity-50 px-4 text-6xl"
       >
         &rarr;
       </div>
@@ -62,25 +62,25 @@
       <div id="gallery" class="flex gap-4 pb-4 overflow-scroll">
         <img
           alt="Capture d'écran du jeu OneShot : l'épisode pancake"
-          class="w-full rounded-md"
+          class="w-full rounded-md max-h-96"
           src="assets/img/screen1.png"
         />
 
         <img
           alt="Capture d'écran du jeu OneShot : l'épisode pancake"
-          class="w-full rounded-md"
+          class="w-full rounded-md max-h-96"
           src="assets/img/screen2.png"
         />
 
         <img
           alt="Capture d'écran du jeu OneShot : l'épisode pancake"
-          class="w-full rounded-md"
+          class="w-full rounded-md max-h-96"
           src="assets/img/screen3.png"
         />
 
         <img
           alt="Capture d'écran du jeu OneShot : l'épisode pancake"
-          class="w-full rounded-md"
+          class="w-full rounded-md max-h-96"
           src="assets/img/screen4.png"
         />
       </div>
@@ -88,13 +88,15 @@
 
     <hr class="border-t border-black" />
 
-    <h1 id="instructions" class="text-center text-xl">
+    <h1 id="instructions" class="text-center text-2xl">
       Comment installer la traduction ?
     </h1>
 
     <ol class="list-decimal list-inside flex flex-col gap-3">
       <li>
         Téléchargez OneShot: Pancakes Episode sur <a class="text-blue-600 underline" href="https://futurecatgames.itch.io/oneshot-pancake-episode" target="_blank">Itch.io</a>
+        
+        <img alt="Logo de Itch.io" class="w-full lg:w-1/2" src="assets/img/guide1.png" />
       </li>
 
       <li>
@@ -102,15 +104,19 @@
       </li>
 
       <li>
-        Extrayez l'archive et lancez le logiciel .exe
+        Dézippez l'archive et lancez le logiciel .exe
       </li>
 
       <li>
-        Suivez les instructions de l'installeur pour installer la traduction
+        Sélectionnez le dossier dézippé de OneShot: Pancakes Episode puis cliquez sur "Installer Le Patch"
+        
+        <img alt="Capture d'écran de l'installeur" class="w-full lg:w-1/2" src="assets/img/guide2.png" />
       </li>
 
       <li>
         Lancez le jeu, allez dans "Settings", puis "Language" et sélectionnez "Français"
+        
+        <img alt="Capture d'écran du jeu OneShot : l'épisode pancake" class="w-full lg:w-1/2" src="assets/img/guide3.png" />
       </li>
 
       <li>
