@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.optimized.css" />
+    <link rel="icon" href="assets/favicon.ico" />
+
+    <meta content="OneShot (l'épisode pancake)" property="og:title" />
+    <meta
+      content="Traduction Française du nouveau jeu de l'univers OneShot"
+      property="og:description"
+    />
+
+    <title>OneShot : l'épisode pancake</title>
+  </head>
+
+  <body
+    class="scroll-smooth flex flex-col gap-6 bg-[url('assets/img/background.png')] p-8 lg:p-52 lg:py-12 lg:gap-12 bg-fixed text-lg"
+  >
+    <div class="flex flex-col items-center gap-6">
+      <img alt="Logo de OneShot" class="w-3/4 lg:w-2/5" src="assets/img/logo.png" />
+
+      <h1 class="text-2xl">
+        Un tout nouveau jeu dans l'univers de OneShot, maintenant disponible en
+        Français
+      </h1>
+
+      <a href="#instructions" class="text-xl bg-purple-500 w-fit rounded-md p-3">
+        Installer
+      </a>
+    </div>
+
+    <hr class="border-t border-black" />
+
+    <h1 class="text-center text-xl">
+      Quelques images pour vous donner envie de l'essayer
+    </h1>
+
+    <div class="relative">
+      <div
+        hidden
+        id="arrow-left"
+        class="cursor-pointer absolute left-2 top-1/2 -translate-y-1/2 rounded-full text-white bg-black bg-opacity-50 px-4 text-4xl"
+      >
+        &larr;
+      </div>
+      <div
+        id="arrow-right"
+        class="cursor-pointer absolute right-2 top-1/2 -translate-y-1/2 rounded-full text-white bg-black bg-opacity-50 px-4 text-4xl"
+      >
+        &rarr;
+      </div>
+
+      <div id="gallery" class="flex gap-4 pb-4 overflow-scroll">
+        <img
+          alt="Capture d'écran du jeu OneShot : l'épisode pancake"
+          class="w-full rounded-md"
+          src="assets/img/screen1.png"
+        />
+
+        <img
+          alt="Capture d'écran du jeu OneShot : l'épisode pancake"
+          class="w-full rounded-md"
+          src="assets/img/screen2.png"
+        />
+
+        <img
+          alt="Capture d'écran du jeu OneShot : l'épisode pancake"
+          class="w-full rounded-md"
+          src="assets/img/screen3.png"
+        />
+
+        <img
+          alt="Capture d'écran du jeu OneShot : l'épisode pancake"
+          class="w-full rounded-md"
+          src="assets/img/screen4.png"
+        />
+      </div>
+    </div>
+
+    <hr class="border-t border-black" />
+
+    <h1 id="instructions" class="text-center text-xl">
+      Comment installer la traduction ?
+    </h1>
+
+    <ol class="list-decimal list-inside flex flex-col gap-3">
+      <li>
+        Téléchargez OneShot: Pancakes Episode sur <a class="text-blue-600 underline" href="https://futurecatgames.itch.io/oneshot-pancake-episode" target="_blank">Itch.io</a>
+      </li>
+
+      <li>
+        Téléchargez la traduction <a href="/assets/installer.zip" class="text-blue-600 underline" download="installer.zip">ici</a>
+      </li>
+
+      <li>
+        Extrayez l'archive et lancez le logiciel .exe
+      </li>
+
+      <li>
+        Suivez les instructions de l'installeur pour installer la traduction
+      </li>
+
+      <li>
+        Lancez le jeu, allez dans "Settings", puis "Language" et sélectionnez "Français"
+      </li>
+
+      <li>
+        Profitez du jeu en Français !
+      </li>
+    </ol>
+
+    <hr class="border-t border-black" />
+
+    <h1 class="text-center text-xl">Cette traduction vous est présentée par...</h1>
+
+    <div class="grid grid-cols-2 gap-6 lg:grid-cols-5">
+      <div class="flex flex-col items-center gap-2">
+        <img alt="Avatar de Straky" class="w-1/2" src="assets/img/straky.gif" />
+        <p class="text-center text-lg">Straky</p>
+        <p class="text-center">Traducteur, Développeur</p>
+      </div>
+
+      <div class="flex flex-col items-center gap-2">
+        <img alt="Avatar de Lumap" class="w-1/2" src="assets/img/lumap.png" />
+        <p class="text-center text-lg">Lumap</p>
+        <p class="text-center">Traducteur, Développeur</p>
+      </div>
+
+      <div class="flex flex-col items-center gap-2">
+        <img alt="Avatar de Technochips" class="w-1/2" src="assets/img/technochips.png" />
+        <p class="text-center text-lg">Technochips</p>
+        <p class="text-center">Traducteur</p>
+      </div>
+
+      <div class="flex flex-col items-center gap-2">
+        <img alt="Avatar de Happy" class="w-1/2" src="assets/img/happy.png" />
+        <p class="text-center text-lg">Happy</p>
+        <p class="text-center">Relecteur</p>
+      </div>
+
+      <div class="flex flex-col items-center gap-2">
+        <img alt="Avatar de Priax" class="w-1/2" src="assets/img/priax.png" /
+        <p class="text-center text-lg">Priax</p>
+        <p class="text-center">Relecteur</p>
+      </div>
+    </div>
+
+    <hr class="border-t border-black" />
+
+    <p class="font-sans">© 2024, Straky & Lumap</p>
+
+    <script src="assets/script.js"></script>
+  </body>
+</html>
