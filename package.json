@@ -7,7 +7,7 @@
     "tailwindcss": "^3.4.6"
   },
   "scripts": {
-    "css": "npx tailwindcss -i ./assets/globals.css -o ./assets/style.css --watch",
-    "css:minify": "npx tailwindcss -i ./assets/globals.css -o ./assets/style.css --minify"
+    "css:dev": "npx tailwindcss -i ./assets/globals.css -o ./assets/style.css --watch",
+    "css:min": "npx tailwindcss -i ./assets/globals.css -o ./assets/style.css --minify"
   }
 }
