@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="style.optimized.css" />
+    <link rel="stylesheet" href="assets/style.css" />
     <link rel="icon" href="assets/favicon.ico" />
 
     <meta content="OneShot (l'épisode pancake)" property="og:title" />
@@ -17,22 +17,36 @@
   </head>
 
   <body
-    class="scroll-smooth flex flex-col gap-6 bg-[url('assets/img/background.png')] p-8 lg:p-52 lg:py-12 lg:gap-12 bg-fixed text-lg text-gray-700"
+    class="flex flex-col gap-6 scroll-smooth bg-[url('img/background.png')] bg-fixed
+      p-8 font-terminus text-lg text-gray-700 lg:gap-12 lg:p-52 lg:py-12"
   >
     <div class="flex flex-col items-center gap-6">
-      <img alt="Logo de OneShot" class="w-3/4 lg:w-2/5" src="assets/img/logo.png" />
+      <img
+        alt="Logo de OneShot"
+        class="w-3/4 lg:w-2/5"
+        src="assets/img/logo.png"
+      />
 
       <h1 class="text-xl">
         Un tout nouveau jeu dans l'univers de OneShot, maintenant disponible en
         Français
       </h1>
 
-      <div class="flex gap-6">
-        <a href="#instructions" class="text-xl text-black bg-purple-500 w-fit rounded-md p-3">
+      <div class="flex gap-10">
+        <a
+          href="#instructions"
+          class="w-fit rounded-md bg-purple-500 p-3 text-xl text-black transition-all
+            duration-300 hover:scale-105"
+        >
           Installer
         </a>
 
-        <a href="https://github.com/lumap/oneshot-pancakes-fr-translation" target="_blank" class="text-xl text-white bg-gray-700 w-fit rounded-md p-3 ml-4">
+        <a
+          href="https://github.com/lumap/oneshot-pancakes-fr-translation"
+          target="_blank"
+          class="w-fit rounded-md bg-gray-700 p-3 text-xl text-white transition-all duration-300
+            hover:scale-105"
+        >
           Voir sur GitHub
         </a>
       </div>
@@ -40,47 +54,47 @@
 
     <hr class="border-t border-black" />
 
-    <h1 class="text-center text-2xl">
-      Captures d'écran de la traduction
-    </h1>
+    <h1 class="text-center text-2xl">Captures d'écran de la traduction</h1>
 
     <div class="relative">
       <div
         hidden
         id="arrow-left"
-        class="cursor-pointer absolute left-2 top-1/2 -translate-y-1/2 rounded-full text-white bg-black bg-opacity-50 px-4 text-6xl"
+        class="absolute left-2 top-1/2 -translate-y-1/2 cursor-pointer rounded-full bg-black
+          bg-opacity-50 px-4 text-6xl text-white"
       >
         &larr;
       </div>
       <div
         id="arrow-right"
-        class="cursor-pointer absolute right-2 top-1/2 -translate-y-1/2 rounded-full text-white bg-black bg-opacity-50 px-4 text-6xl"
+        class="absolute right-2 top-1/2 -translate-y-1/2 cursor-pointer rounded-full bg-black
+          bg-opacity-50 px-4 text-6xl text-white"
       >
         &rarr;
       </div>
 
-      <div id="gallery" class="flex gap-4 pb-4 overflow-scroll">
+      <div id="gallery" class="flex gap-4 overflow-scroll pb-4">
         <img
           alt="Capture d'écran du jeu OneShot : l'épisode pancake"
-          class="w-full rounded-md max-h-96"
+          class="max-h-96 w-full rounded-md"
           src="assets/img/screen1.png"
         />
 
         <img
           alt="Capture d'écran du jeu OneShot : l'épisode pancake"
-          class="w-full rounded-md max-h-96"
+          class="max-h-96 w-full rounded-md"
           src="assets/img/screen2.png"
         />
 
         <img
           alt="Capture d'écran du jeu OneShot : l'épisode pancake"
-          class="w-full rounded-md max-h-96"
+          class="max-h-96 w-full rounded-md"
           src="assets/img/screen3.png"
         />
 
         <img
           alt="Capture d'écran du jeu OneShot : l'épisode pancake"
-          class="w-full rounded-md max-h-96"
+          class="max-h-96 w-full rounded-md"
           src="assets/img/screen4.png"
         />
       </div>
@@ -88,81 +102,171 @@
 
     <hr class="border-t border-black" />
 
-    <h1 id="instructions" class="text-center text-2xl">
+    <h1 id="instructions" class="text-center font-aller text-3xl">
       Comment installer la traduction ?
     </h1>
 
-    <ol class="list-decimal list-inside flex flex-col gap-3">
+    <ol class="flex list-inside list-decimal flex-col gap-4 text-xl">
       <li>
-        Téléchargez OneShot: Pancakes Episode sur <a class="text-blue-600 underline" href="https://futurecatgames.itch.io/oneshot-pancake-episode" target="_blank">Itch.io</a>
-        
-        <img alt="Logo de Itch.io" class="w-full lg:w-1/2" src="assets/img/guide1.png" />
+        Téléchargez OneShot: Pancakes Episode sur
+        <a
+          class="text-blue-600 underline"
+          href="https://futurecatgames.itch.io/oneshot-pancake-episode"
+          target="_blank"
+        >
+          Itch.io
+        </a>
+
+        <img
+          alt="Logo de Itch.io"
+          class="w-full rounded-md shadow-md shadow-black lg:w-1/2"
+          src="assets/img/guide1.png"
+        />
       </li>
 
       <li>
-        Téléchargez la traduction <a href="/assets/installer.zip" class="text-blue-600 underline" download="installer.zip">ici</a>
+        Téléchargez la traduction
+        <a
+          href="/assets/installer.zip"
+          class="text-blue-600 underline"
+          download="installer.zip"
+        >
+          ici
+        </a>
+      </li>
+
+      <li>Dézippez l'archive et lancez le fichier .exe< /li></li>
+
+      <li>
+        Sélectionnez le dossier dézippé de OneShot: Pancakes Episode puis
+        cliquez sur "Installer Le Patch".
+
+        <img
+          alt="Capture d'écran de l'installeur"
+          class="w-full rounded-md shadow-md shadow-black lg:w-1/2"
+          src="assets/img/guide2.png"
+        />
       </li>
 
       <li>
-        Dézippez l'archive et lancez le logiciel .exe
+        Lancez le jeu, allez dans "Settings", puis "Language" et sélectionnez
+        "Français"
+
+        <img
+          alt="Capture d'écran du jeu OneShot : l'épisode pancake"
+          class="w-full rounded-md shadow-md shadow-black lg:w-1/2"
+          src="assets/img/guide3.png"
+        />
       </li>
 
-      <li>
-        Sélectionnez le dossier dézippé de OneShot: Pancakes Episode puis cliquez sur "Installer Le Patch"
-        
-        <img alt="Capture d'écran de l'installeur" class="w-full lg:w-1/2" src="assets/img/guide2.png" />
-      </li>
-
-      <li>
-        Lancez le jeu, allez dans "Settings", puis "Language" et sélectionnez "Français"
-        
-        <img alt="Capture d'écran du jeu OneShot : l'épisode pancake" class="w-full lg:w-1/2" src="assets/img/guide3.png" />
-      </li>
-
-      <li>
-        Profitez du jeu en Français !
-      </li>
+      <li>Profitez du jeu en Français !</li>
     </ol>
 
     <hr class="border-t border-black" />
 
-    <h1 class="text-center text-xl">Cette traduction vous est présentée par...</h1>
+    <h1 class="text-center font-aller text-3xl">
+      Cette traduction vous est présentée par...
+    </h1>
 
     <div class="grid grid-cols-2 gap-6 lg:grid-cols-5">
       <div class="flex flex-col items-center gap-2">
-        <img alt="Avatar de Straky" class="w-1/2" src="assets/img/straky.gif" />
-        <p class="text-center text-lg">Straky</p>
+        <a
+          href="https://straky.fr"
+          target="_blank"
+          class="w-1/2 transition-all duration-300 hover:scale-110"
+        >
+          <img
+            alt="Avatar de Straky"
+            class="rounded-md"
+            src="assets/img/straky.gif"
+          />
+        </a>
+        <p class="text-center font-aller text-2xl">Straky</p>
         <p class="text-center">Traducteur, Développeur</p>
       </div>
 
       <div class="flex flex-col items-center gap-2">
-        <img alt="Avatar de Lumap" class="w-1/2" src="assets/img/lumap.png" />
-        <p class="text-center text-lg">Lumap</p>
+        <a
+          href="https://github.com/lumap"
+          target="_blank"
+          class="w-1/2 transition-all duration-300 hover:scale-110"
+        >
+          <img
+            alt="Avatar de Lumap"
+            class="rounded-md"
+            src="assets/img/lumap.png"
+          />
+        </a>
+        <p class="text-center font-aller text-2xl">Lumap</p>
         <p class="text-center">Traducteur, Développeur</p>
       </div>
 
       <div class="flex flex-col items-center gap-2">
-        <img alt="Avatar de Technochips" class="w-1/2" src="assets/img/technochips.png" />
-        <p class="text-center text-lg">Technochips</p>
+        <a
+          href="https://technochips.fr"
+          target="_blank"
+          class="w-1/2 transition-all duration-300 hover:scale-110"
+        >
+          <img
+            alt="Avatar de Technochips"
+            class="rounded-md"
+            src="assets/img/technochips.png"
+          />
+        </a>
+        <p class="text-center font-aller text-2xl">Technochips</p>
         <p class="text-center">Traducteur</p>
       </div>
 
       <div class="flex flex-col items-center gap-2">
-        <img alt="Avatar de Happy" class="w-1/2" src="assets/img/happy.png" />
-        <p class="text-center text-lg">Happy</p>
+        <a
+          href="https://twitter.com/Happy0503Gamer"
+          target="_blank"
+          class="w-1/2 transition-all duration-300 hover:scale-110"
+        >
+          <img
+            alt="Avatar de Happy"
+            class="rounded-md"
+            src="assets/img/happy.png"
+          />
+        </a>
+        <p class="text-center font-aller text-2xl">Happy</p>
         <p class="text-center">Relecteur</p>
       </div>
 
       <div class="flex flex-col items-center gap-2">
-        <img alt="Avatar de Priax" class="w-1/2" src="assets/img/priax.png" /
-        <p class="text-center text-lg">Priax</p>
+        <a
+          href="https://x.com/Prime_Axiom"
+          target="_blank"
+          class="w-1/2 transition-all duration-300 hover:scale-110"
+        >
+          <img
+            alt="Avatar de Priax"
+            class="rounded-md"
+            src="assets/img/priax.png"
+          />
+        </a>
+        <p class="text-center font-aller text-2xl">Priax</p>
         <p class="text-center">Relecteur</p>
       </div>
     </div>
 
     <hr class="border-t border-black" />
 
-    <p class="font-sans">© 2024, Straky & Lumap</p>
+    <p class="font-aller">
+      © 2024, Straky (design et idée du site) et Lumap (programmation du site)
+    </p>
+
+    <p class="font-aller">
+      Site disponible sur
+      <a
+        href="https://github.com/lumap/oneshot-pancakes-fr"
+        class="text-blue-600 underline"
+        target="_blank"
+      >
+        GitHub
+      </a>
+      et hébergé avec GitHub Pages
+    </p>
 
     <script src="assets/script.js"></script>
   </body>

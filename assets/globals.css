@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: Terminus;
+    src: url(terminus.ttf) format('truetype');
+    font-weight: 400;
+  }
+  
+  @font-face {
+    font-family: Aller;
+    src: url(aller.ttf) format('truetype');
+    font-weight: 400;
+  }
+}
