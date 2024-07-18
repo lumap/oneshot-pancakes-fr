@@ -109,61 +109,136 @@
         Comment installer la traduction ?
       </h1>
 
-      <ol class="flex list-inside list-decimal flex-col gap-4 text-xl">
-        <li>
-          Téléchargez OneShot: Pancakes Episode sur
-          <a
-            class="text-blue-600 underline"
-            href="https://futurecatgames.itch.io/oneshot-pancake-episode"
-            target="_blank"
-          >
-            Itch.io
-          </a>
+      <div class="relative my-2 grid grid-cols-2 place-items-center py-2">
+        <div
+          id="install-auto-select"
+          class="cursor-pointer rounded-lg border border-black border-opacity-100 p-4 text-center
+            transition-all duration-200"
+        >
+          <p class="select-none">Installation automatique (.exe)</p>
+        </div>
 
-          <img
-            alt="Logo de Itch.io"
-            class="w-full rounded-md shadow-md shadow-black lg:w-1/2"
-            src="assets/img/guide1.png"
-          />
-        </li>
+        <div
+          id="install-manual-select"
+          class="cursor-pointer rounded-lg border border-black border-opacity-0 p-4 text-center
+            transition-all duration-200"
+        >
+          <p class="select-none text-center">Installation manuelle (.zip)</p>
+        </div>
 
-        <li>
-          Téléchargez la traduction
-          <a
-            href="/assets/installer.zip"
-            class="text-blue-600 underline"
-            download="installer.zip"
-          >
-            ici
-          </a>
-        </li>
+        <div
+          class="absolute left-1/2 top-0 h-full w-[1px] border-l border-gray-500"
+        ></div>
+      </div>
 
-        <li>Dézippez l'archive et lancez le fichier .exe< /li></li>
+      <div id="install-auto-content">
+        <ol class="flex list-inside list-decimal flex-col gap-4 text-xl">
+          <li>
+            Téléchargez OneShot: Pancakes Episode sur
+            <a
+              class="text-blue-600 underline"
+              href="https://futurecatgames.itch.io/oneshot-pancake-episode"
+              target="_blank"
+            >
+              Itch.io
+            </a>
 
-        <li>
-          Sélectionnez le dossier dézippé de OneShot: Pancakes Episode puis
-          cliquez sur "Installer Le Patch".
+            <img
+              alt="Logo de Itch.io"
+              class="w-full rounded-md shadow-md shadow-black lg:w-1/2"
+              src="assets/img/guide-itch.png"
+            />
+          </li>
 
-          <img
-            alt="Capture d'écran de l'installeur"
-            class="w-full rounded-md shadow-md shadow-black lg:w-1/2"
-            src="assets/img/guide2.png"
-          />
-        </li>
+          <li>
+            Téléchargez l'installeur
+            <a
+              href="/assets/installer.zip"
+              class="text-blue-600 underline"
+              download="installer.zip"
+            >
+              ici
+            </a>
+          </li>
 
-        <li>
-          Lancez le jeu, allez dans "Settings", puis "Language" et sélectionnez
-          "Français"
+          <li>Dézippez l'archive et lancez le fichier .exe</li>
 
-          <img
-            alt="Capture d'écran du jeu OneShot : l'épisode pancake"
-            class="w-full rounded-md shadow-md shadow-black lg:w-1/2"
-            src="assets/img/guide3.png"
-          />
-        </li>
+          <li>
+            Sélectionnez le dossier dézippé de OneShot: Pancakes Episode puis
+            cliquez sur "Installer Le Patch".
 
-        <li>Profitez du jeu en Français !</li>
-      </ol>
+            <img
+              alt="Capture d'écran de l'installeur"
+              class="w-full rounded-md shadow-md shadow-black lg:w-1/2"
+              src="assets/img/guide-installer.png"
+            />
+          </li>
+
+          <li>
+            Lancez le jeu, allez dans "Settings", puis "Language" et
+            sélectionnez "Français"
+
+            <img
+              alt="Capture d'écran du jeu OneShot : l'épisode pancake"
+              class="w-full rounded-md shadow-md shadow-black lg:w-1/2"
+              src="assets/img/guide-game-settings.png"
+            />
+          </li>
+
+          <li>Profitez du jeu en Français !</li>
+        </ol>
+      </div>
+
+      <div id="install-manual-content" hidden>
+        <ol class="flex list-inside list-decimal flex-col gap-4 text-xl">
+          <li>
+            Téléchargez OneShot: Pancakes Episode sur
+            <a
+              class="text-blue-600 underline"
+              href="https://futurecatgames.itch.io/oneshot-pancake-episode"
+              target="_blank"
+            >
+              Itch.io
+            </a>
+            
+            <img
+              alt="Logo de Itch.io"
+              class="w-full rounded-md shadow-md shadow-black lg:w-1/2"
+              src="assets/img/guide-itch.png"
+            />
+          </li>
+          
+          <li>Dézippez le jeu</li>
+          
+          <li>
+            Téléchargez le patch
+            <a
+              href="/assets/manual-patch.zip"
+              class="text-blue-600 underline"
+              download="manual-patch.zip"
+            >
+              ici
+            </a>
+          </li>
+          
+          <li>Dézippez le patch.</li>
+          
+          <li>Déplacez les deux dossiers contenus dans le patch vers les fichers du jeu, en remplaçant les fichiers déjà existant.</li>
+          
+          <li>
+            Lancez le jeu, allez dans "Settings", puis "Language" et
+            sélectionnez "Français"
+
+            <img
+              alt="Capture d'écran du jeu OneShot : l'épisode pancake"
+              class="w-full rounded-md shadow-md shadow-black lg:w-1/2"
+              src="assets/img/guide-game-settings.png"
+            />
+          </li>
+
+          <li>Profitez du jeu en Français !</li>
+        </ol>
+      </div>
 
       <hr class="border-t border-black" />
 
